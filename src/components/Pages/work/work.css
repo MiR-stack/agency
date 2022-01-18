@@ -1,0 +1,97 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container img {
+  height: 300px;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.container .content {
+  width: 65%;
+  text-align: left;
+}
+
+.container .content h2 {
+  text-transform: capitalize;
+}
+
+.container .content ul {
+  margin: 10px 20px;
+}
+
+.container .content p {
+  margin: 20px 0;
+}
+
+.container .content .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .content .bottom p {
+  text-transform: capitalize;
+  margin: 0 10px;
+  border: 1px solid #008066;
+  padding: 10px 15px;
+}
+
+.container .content .bottom .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content .bottom .left p {
+  border-radius: 10px;
+}
+
+.portfolio .Bottom {
+  margin-top: 50px;
+}
+
+.portfolio .Bottom h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.portfolio .Bottom .wrapper .card {
+  height: calc(200px + 5vw);
+}
+
+@media only screen and (max-width: 900px) {
+  .container img {
+    height: 250px;
+    width: 300px;
+  }
+  .container .content {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .container .content .bottom {
+    font-size: .8rem;
+  }
+  .container .content .bottom p {
+    padding: 5px;
+    margin-right: 10px;
+  }
+}
+
+.portfolio .Bottom {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=work.css.map */

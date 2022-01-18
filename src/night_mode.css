@@ -1,0 +1,67 @@
+.dark_mode p,
+.dark_mode ul {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .TopSection {
+  background: #1b1c1f !important;
+}
+
+.dark_mode .section,
+.dark_mode .services {
+  background: #202124 !important;
+  padding: 50px;
+}
+
+.dark_mode .section h2,
+.dark_mode .section h3,
+.dark_mode .section h4,
+.dark_mode .services h2,
+.dark_mode .services h3,
+.dark_mode .services h4 {
+  color: white !important;
+}
+
+.dark_mode .section .card,
+.dark_mode .section .blogCard,
+.dark_mode .services .card,
+.dark_mode .services .blogCard {
+  background: black !important;
+}
+
+.dark_mode .section .card p,
+.dark_mode .section .blogCard p,
+.dark_mode .services .card p,
+.dark_mode .services .blogCard p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .section table th,
+.dark_mode .services table th {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .main {
+  background: #202124;
+}
+
+.dark_mode .main::after {
+  background: #1a1a1a;
+}
+
+.dark_mode .main::before {
+  background: #0d0d0d;
+}
+
+.dark_mode .information .right {
+  border-radius: 10px;
+}
+
+.dark_mode .information .right .paragraph {
+  background: #1a1a1a;
+}
+
+.dark_mode .information .right table {
+  color: white;
+}
+/*# sourceMappingURL=night_mode.css.map */

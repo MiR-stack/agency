@@ -1,0 +1,35 @@
+.contract .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 50px;
+}
+
+.contract .container div {
+  padding: 30px 20px;
+  background: #d6d3d3;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.contract .container div h3 {
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.contract .container div p {
+  line-height: 1.5rem;
+}
+
+.contract .map {
+  height: 40vh;
+  width: 100%;
+}
+/*# sourceMappingURL=contract.css.map */

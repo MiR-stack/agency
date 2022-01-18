@@ -1,0 +1,71 @@
+.dark_mode {
+
+    p,
+    ul {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    $base-color:#202124;
+
+    .TopSection {
+        background: #1b1c1f !important;
+    }
+
+
+    .section,
+    .services {
+        background: $base-color !important;
+        padding: 50px;
+
+        h2,
+        h3,
+        h4 {
+            color: white !important;
+        }
+
+        .card,
+        .blogCard {
+            background: black !important;
+
+
+
+            p {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        table th {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+
+    .main {
+        background: $base-color;
+
+        &::after {
+            background: #1a1a1a;
+        }
+
+        &::before {
+            background: #0d0d0d;
+        }
+
+    }
+
+
+    .information {
+        .right {
+            border-radius: 10px;
+
+            .paragraph {
+                background: #1a1a1a;
+            }
+
+            table {
+                color: white;
+            }
+        }
+    }
+
+}

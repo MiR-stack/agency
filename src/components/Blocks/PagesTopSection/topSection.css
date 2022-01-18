@@ -1,0 +1,55 @@
+.TopSection span {
+    position: absolute;
+    border-radius: 50%;
+    background: #ffffff4d;
+}
+
+.TopSection span:nth-child(1) {
+    left: 10%;
+    top: 20%;
+    height: 50px;
+    width: 50px;
+
+}
+
+.TopSection span:nth-child(2) {
+    left: 50%;
+    top: 30%;
+    height: 80px;
+    width: 80px;
+    background:#e902e946;
+
+}
+
+.TopSection span:nth-child(3) {
+    left: 35%;
+    top: 60%;
+    height: 70px;
+    width: 70px;
+    background:rgba(255, 0, 225, 0.3);
+
+}
+
+.TopSection span:nth-child(4) {
+    left: 40%;
+    top: 20%;
+    height: 50px;
+    width: 50px;
+    background:rgba(255, 213, 0, 0.352);
+
+}
+
+.TopSection span:nth-child(5) {
+    left: 70%;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    background:rgba(3, 178, 198, 0.3)
+
+}
+
+.TopSection .wrapper span {
+    position: unset;
+    color: #660066;
+    background: none;
+}

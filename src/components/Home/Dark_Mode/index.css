@@ -1,0 +1,56 @@
+.dark_mode p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .section,
+.dark_mode .services {
+  background: #202124 !important;
+  padding: 50px;
+}
+
+.dark_mode .section .card,
+.dark_mode .services .card {
+  background: #1a1a1a;
+}
+
+.dark_mode .section .card h2,
+.dark_mode .section .card h3,
+.dark_mode .services .card h2,
+.dark_mode .services .card h3 {
+  color: white !important;
+}
+
+.dark_mode .section .card p,
+.dark_mode .services .card p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .section table th,
+.dark_mode .services table th {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .main {
+  background: #202124;
+}
+
+.dark_mode .main::after {
+  background: #1a1a1a;
+}
+
+.dark_mode .main::before {
+  background: #0d0d0d;
+}
+
+.dark_mode .information .right {
+  border-radius: 10px;
+}
+
+.dark_mode .information .right .paragraph {
+  background: #1a1a1a;
+}
+
+.dark_mode .information .right table {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

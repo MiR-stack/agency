@@ -1,0 +1,211 @@
+.services1 .container .card:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff66b3), to(#008066));
+  background: linear-gradient(#ff66b3, #008066);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.services1 .container .card:hover svg,
+.services1 .container .card:hover h3,
+.services1 .container .card:hover p {
+  color: white;
+}
+
+.services1 .container .card:hover a {
+  border: 1px solid white;
+}
+
+.services2 .container .card {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  height: 250px;
+  background: #ebfafa !important;
+}
+
+.services2 .container .card a {
+  display: none;
+}
+
+.services2 .container .card .icons {
+  display: block !important;
+}
+
+.services2 .container .card .icons svg {
+  position: absolute;
+  z-index: 0;
+  opacity: .4;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.services2 .container .card .icons svg:nth-child(1) {
+  top: 70%;
+  left: 5%;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.services2 .container .card .icons svg:nth-child(2) {
+  top: 40%;
+  right: -5%;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.services2 .container .card .icons svg:nth-child(3) {
+  top: 35%;
+  left: 40%;
+  color: #00e6e6;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.services2 .container .card .icons svg:nth-child(4) {
+  top: 10%;
+  left: -5%;
+  color: #ff0066;
+}
+
+.services2 .container .card .icons svg:nth-child(5) {
+  bottom: -15%;
+  right: 10%;
+  color: #6600ff;
+}
+
+.services2 .container .card:hover .icons svg {
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.services2 .container .card:hover .icons svg:nth-child(1) {
+  top: 60%;
+  left: 10%;
+  color: #ff1a8c;
+}
+
+.services2 .container .card:hover .icons svg:nth-child(2) {
+  top: 60%;
+  right: 5%;
+}
+
+.services2 .container .card:hover .icons svg:nth-child(4) {
+  top: 12%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(1.4);
+          transform: translateX(-50%) scale(1.4);
+  color: #008066;
+  opacity: 1 !important;
+}
+
+.services2 .container .card:hover .icons svg:nth-child(5) {
+  bottom: 0;
+  -webkit-transform: rotate(190deg);
+          transform: rotate(190deg);
+  left: 50%;
+}
+
+.services2 .container .card .wrapper {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.services3 .container .card {
+  background: linear-gradient(30deg, #03fac9, transparent) !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.services3 .container .card:hover {
+  background: linear-gradient(30deg, pink, transparent) !important;
+}
+
+.serviceDetails section {
+  padding: 10px;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.serviceDetails section .image {
+  height: 300px;
+  width: 30%;
+  margin-right: 20px;
+}
+
+.serviceDetails section .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.serviceDetails section .content {
+  text-align: left;
+  width: 65%;
+  float: right;
+}
+
+.serviceDetails section .content h2 {
+  text-transform: capitalize;
+}
+
+.serviceDetails section .content p {
+  margin: 20px 0;
+}
+
+.serviceDetails section .content ul {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.serviceDetails section:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1000px) {
+  .serviceDetails section {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .serviceDetails section .image {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .serviceDetails section .content {
+    width: 100%;
+  }
+  .serviceDetails section .content h2 {
+    margin-top: 10px;
+  }
+  .serviceDetails section .content p {
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .serviceDetails section .content h2 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=services.css.map */

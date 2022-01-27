@@ -8,6 +8,7 @@ import Testimonial from '../../Blocks/Testimonial'
 import Blog from '../../Blocks/Blog'
 import Team from '../../Blocks/team'
 import ProjectDetails from '../../Blocks/Information/Project_details'
+import Brands from '../../Blocks/Brands'
 import Subscribe from '../../Blocks/Subscribe'
 import Footer from '../../Blocks/Footer'
 
@@ -26,6 +27,7 @@ export default function Home() {
             <Blog />
             <Team />
             <ProjectDetails />
+            <Brands />
             <Subscribe />
             <Footer />
         </div>

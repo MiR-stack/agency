@@ -507,6 +507,13 @@
             h4 {
                 margin: 10px 0;
             }
+            a{
+                color:rgb(36, 36, 36);
+                text-decoration:none;
+                &:hover{
+                    color:black;
+                }
+            }
 
             .category {
                 display: flex;
@@ -580,6 +587,10 @@
                 }
             }
         }
+    }
+    .error{
+        border:1px solid red;
+        background:pink;
     }
 }
 

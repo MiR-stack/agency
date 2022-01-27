@@ -12,6 +12,8 @@ import WorkDetails from './components/Pages/work/workDetails'
 import Blog from './components/Pages/Blog/blog'
 import BlogDetails from './components/Pages/Blog/blogDetails/blogDetails'
 import Contract from './components/Pages/contract/contract'
+import About from './components/Pages/About/about'
+import Pricing from './components/Pages/Pricing/pricing'
 import Error from './components/Blocks/Error'
 
 export default function App({mode}) {
@@ -35,6 +37,8 @@ export default function App({mode}) {
         <Route path='/blog' component={Blog} />        
         <Route path='/blogDetails' component={BlogDetails} />    
         <Route path='/contract' component={Contract} />    
+        <Route path='/about' component={About} />    
+        <Route path='/pricing' component={Pricing} />    
         <Route path='*' component={Error} />
       </Switch>
      </div>

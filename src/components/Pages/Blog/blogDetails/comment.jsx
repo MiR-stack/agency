@@ -33,7 +33,7 @@ export default function Comment({ value }) {
 
 
     useEffect(() => {
-        setReplies({ ...replies, userName, image })
+        setReplies((item) =>{return { ...item, userName, image }})
     }, [userName, image])
 
     function handleSubmit() {
@@ -70,7 +70,7 @@ export default function Comment({ value }) {
             </div>
             <div className="Reply">
                 <div className="btn-group">
-                    <input type="text" name='rieply' value={replies.rieply} placeholder='Write something...' onChange={(e) => { setReplies({ ...replies, rieply: e.target.value }) }} />
+                    <input className={error?replies.rieply?null:'error':null} type="text" name='rieply' value={replies.rieply} placeholder='Write something...' onChange={(e) => { setReplies({ ...replies, rieply: e.target.value }) }} />
                     <button onClick={handleSubmit} >reply</button>
                 </div>
             </div>

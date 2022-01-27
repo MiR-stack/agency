@@ -551,6 +551,15 @@
   margin: 10px 0;
 }
 
+.blogDetails .Right .categories a {
+  color: #242424;
+  text-decoration: none;
+}
+
+.blogDetails .Right .categories a:hover {
+  color: black;
+}
+
 .blogDetails .Right .categories .category {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,6 +636,11 @@
   margin: 5px;
   font-size: .7rem;
   border-radius: 10px;
+}
+
+.blogDetails .error {
+  border: 1px solid red;
+  background: pink;
 }
 
 @media only screen and (max-width: 1000px) {

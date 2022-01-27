@@ -1,0 +1,193 @@
+.pricing {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        .membership {
+            text-align: center;
+            width: 300px;
+            padding: 30px;
+            border: 2px solid #008066;
+            cursor: pointer;
+            transition: .3s linear;
+            margin: 10px 0;
+
+            h3 {
+                font-size: calc(1.3rem + .5vw);
+                text-transform: capitalize;
+            }
+
+            h4 {
+                font-size: calc(1.5rem + 1vw);
+                margin: 20px 0;
+                color: #008066;
+
+                sub,
+                sup {
+                    font-size: 1rem;
+                }
+            }
+
+            p {
+                color: rgb(21, 21, 21);
+                line-height: 2rem;
+            }
+
+            button {
+                margin: 0 auto;
+                margin-top: 20px;
+                border: 1px solid #008066;
+                color: #008066;
+                padding: 10px 15px;
+                border-radius: 50%;
+
+                &:hover {
+                    border: 1px solid white;
+                    background: #03fac9;
+                    color: white;
+                    box-shadow: 0 0 15px #03fac9;
+                }
+            }
+        }
+
+        .wraper {
+            .membership {
+                width: 28%;
+            }
+        }
+
+
+    }
+    .or{
+        border-top: 1px solid black;
+        position: relative;
+        width:200px;
+        margin: 0 auto;
+        h2{
+            position: absolute;
+            top:-50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            padding:5px 10px;
+            background: white;
+        }
+    }
+}
+
+.manualPricing {
+    .container {
+        align-items: flex-start;
+
+
+        .left {
+            .top {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-right: 20px;
+                    font-size: calc(1.3rem + .5vw);
+                    text-transform: capitalize;
+                }
+
+                select {
+                    padding: 5px;
+                }
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    line-height: 2rem;
+
+                    input {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .membership {
+            margin: 10px 30px;
+            position: relative;
+
+            .discount {
+                position: absolute;
+                right: -25px;
+                top: -25px;
+                height: 50px;
+                width: 50px;
+                background: #e60099;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                clip-path: polygon(50% 0, 62.5% 12.5%, 75% 6.25%, 75% 25%, 93.75% 25%, 87% 37.5%, 100% 50%, 87% 62.5%, 93.75% 75%, 75% 75%, 75% 93.75%, 62.5% 87.5%, 50% 100%, 37.5% 87.5%, 25% 93.75%, 25% 75%, 6.25% 75%, 13% 62.5%, 0% 50%, 13% 37.5%, 6.25% 25%, 25% 25%, 25% 6.25%, 37.5% 13%)
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1200px) {
+    .pricing .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .pricing .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .pricing {
+        .active {
+            transform: scale(1.2);
+            border: 1px solid white !important;
+            background: #008066;
+            box-shadow: 0 0 15px black;
+            transition: .3s linear;
+
+            h3,
+            h4,
+            p,
+            button {
+                color: white !important;
+            }
+
+            button {
+                border: 1px solid white !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .pricing .container {
+        margin-top: 20px;
+
+        .wraper {
+            width: 40%;
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .pricing .container .membership {
+        width: 300px;
+        margin: 10px 0;
+    }
+
+}

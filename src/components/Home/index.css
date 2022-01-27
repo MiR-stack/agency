@@ -1223,6 +1223,144 @@ button {
   color: white;
 }
 
+.quote h2 {
+  font-size: calc(1.5rem + 1.5vw);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: #008066;
+}
+
+.quote .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.quote .wraper {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #e2dfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  padding: 50px;
+}
+
+.quote .wraper span {
+  opacity: .5;
+  z-index: 0;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: calc(2rem + 3.5vw);
+}
+
+.quote .wraper span:nth-child(2) {
+  left: unset;
+  top: unset;
+  bottom: 20px;
+  right: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.quote .wraper p {
+  font-size: calc(1.3rem + 1vw);
+  opacity: .9;
+}
+
+.quote .wraper .footer {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  text-transform: capitalize;
+  color: #1a1a1a;
+}
+
+.quote .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 300px;
+  margin: 20px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quote .image .img {
+  height: 90px;
+  width: 90px;
+  opacity: .7;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.quote .image .img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.quote .image .active {
+  opacity: 1;
+  position: relative;
+}
+
+.quote .image .active::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 10px;
+  width: 10px;
+  background: green;
+  border-radius: 50%;
+}
+
+.brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.brands img {
+  height: 100px;
+  width: 100px;
+}
+
 .mode1 {
   background: #e6e6e6;
 }
@@ -1343,6 +1481,12 @@ button {
   .blogCard .bottom .right p {
     margin-right: 5px;
   }
+  .quote {
+    display: block;
+  }
+  .quote .wraper {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1449,6 +1593,12 @@ button {
   }
   .funFact .wrapper .card h2 {
     font-size: 18px;
+  }
+  .quote .wraper {
+    width: 100%;
+  }
+  .quote .image {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */

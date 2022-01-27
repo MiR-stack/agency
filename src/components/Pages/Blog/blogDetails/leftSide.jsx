@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import Context from '../../../../useContext'
 import { FaFacebook, FaTwitter, FaInstagram, FaTimes } from 'react-icons/fa'
 import Comment from './comment'
@@ -29,24 +29,33 @@ export default function Left() {
         image: null,
         replies: []
     })
+    const { userName, email } = comment
     function handleChange(e) {
         setComment({ ...comment, [e.target.name]: e.target.value })
     }
 
 
+    useEffect(() => {
+        let id = blogDetails.comments.length
+        setComment(comment => { return { ...comment, id: id + 1 } })
+    }, [blogDetails])
 
 
     function handleComment() {
-        let id = blogDetails.comments.length
-        setComment({ ...comment, id: id + 1 })
-        blogDetails.comments.push(comment)
-        setComment({
-            ...comment,
-            id: '',
-            email: '',
-            comment: '',
-            replies: []
-        })
+
+        if (userName && email && comment.comment) {
+            blogDetails.comments.push(comment)
+            setComment({
+                ...comment,
+                id: '',
+                email: '',
+                comment: '',
+                replies: []
+            })
+            setError(false)
+        } else {
+            setError(true)
+        }
 
     }
 
@@ -83,23 +92,23 @@ export default function Left() {
                 <h3>leave a comment:</h3>
                 <div className="inputs">
                     <div className='inputGroup'>
-                        <input name='userName' value={comment.userName} type="text" placeholder='Name' onChange={handleChange} />
-                        <input name='email' type="email" value={comment.email} placeholder='Email' onChange={handleChange} />
+                        <input className={error ? comment.userName ? null : 'error' : null} name='userName' value={comment.userName} type="text" placeholder='Name' onChange={handleChange} />
+                        <input className={error ? comment.email ? null : 'error' : null} name='email' type="email" value={comment.email} placeholder='Email' onChange={handleChange} />
 
                     </div>
-                    <textarea name="comment" value={comment.comment} onChange={handleChange} id="" placeholder='Enter Your Comment' cols="30" rows="10"></textarea>
+                    <textarea className={error ? comment.comment ? null : 'error' : null} name="comment" value={comment.comment} onChange={handleChange} id="" placeholder='Enter Your Comment' cols="30" rows="10"></textarea>
                 </div>
                 <button onClick={handleComment}>comment</button>
             </div>
             <div className={`dmmy ${modal ? 'dmmy-s' : ''}`}  onClick={() => { setModal(false) }}></div>
             <div className={`modal ${modal ? 'modal-s' : ''}`}>
                 <div className="wraper">
-                    <FaTimes />
+                    <FaTimes onClick={() => { setModal(false) }} />
                     <label htmlFor="name">Name:</label>
-                    <input id='name' name='userName' value={comment.userName} type="text" onChange={handleChange} /><br />
+                    <input className={error ? comment.userName ? null : 'error' : null} id='name' name='userName' value={comment.userName} type="text" onChange={handleChange} /><br />
                     <label htmlFor="image">picture (optional):</label>
                     <input type="file" name="image" id="" onChange={handleChange} />
-                    <button onClick={() => { comment.userName ? setModal(false) : setError(true) }}>submit</button>
+                    <button onClick={() => { comment.userName ? setModal(false) : setError(true) }}> submit</button>
                 </div>
             </div>
             <div className="rblog">

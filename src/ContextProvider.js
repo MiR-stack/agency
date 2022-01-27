@@ -70,7 +70,6 @@ const [category,setCategory] = useState('all')
  
   function handleBDetails(id){
       let BD = blogData.find(item => item.id === id )
-      console.log(BD)
       setBlogDetails(BD)
   }
 

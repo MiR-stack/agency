@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 import { data } from './teamData'
@@ -24,29 +24,44 @@ function Card({ item }) {
     )
 }
 
-export default function Team() {
+export default function Team({title}) {
 
     const width = Width()
-    function breakpoints() {
+
+    const [index, setIndex] = useState()
+    const [all, setAll] = useState(false)
+
+    useEffect(() => {
+
+        if (all) return
+
         if (width < 768) {
-            return 2
+            setIndex(2) 
         } else if (width < 992) {
-            return 3
+            setIndex(3) 
         } else {
-            return 4
+            setIndex(4) 
         }
+    }, [width,all])
+
+
+    function handleAll() {
+        setAll(true)
+        setIndex(data.length)
     }
+
+
 
     return (
         <div className='team section'>
-            <h1>Our Team</h1>
+            <h1>{title?title:'Our Team'}</h1>
             <p className="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempora saepe amet quam ad maxime doloribus neque est. Voluptatum, accusantium.</p>
             <div className="wrapper">
                 <div className="container">
-                    {data.slice(0, breakpoints()).map((item, index) => <Card item={item} key={index} />)}
+                    {data.slice(0, index).map((item, index) => <Card item={item} key={index} />)}
                 </div>
                 <div className="btn">
-                    <button>see all</button>
+                    {all ?<button onClick={()=>{setAll(false)}}>see less</button>:<button onClick={handleAll}>see all</button>}
                 </div>
             </div>
         </div>

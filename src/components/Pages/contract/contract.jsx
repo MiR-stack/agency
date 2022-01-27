@@ -3,7 +3,6 @@ import './contract.css'
 import Navbar from '../../navbar/navbar'
 import TopSection from '../../Blocks/PagesTopSection/pagesTopSection'
 import Information from '../../Blocks/Information/Project_details'
-import Subscribe from '../../Blocks/Subscribe'
 import Footer from '../../Blocks/Footer'
 
 export default function Contract() {

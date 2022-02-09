@@ -148,10 +148,7 @@
     .menu {
         display: none;
     }
-}
-
-.nav-dark{
-    .menu{
+     .menu{
         color:white;
     }
     
@@ -162,6 +159,22 @@
       color:white;
       svg{
           color:white;
+      }
+   }
+}
+
+.nav-dark{
+    .menu{
+        color:black;
+    }
+    
+    a{
+        color:black;
+    }
+   .dropdown-menu .name{
+      color:black;
+      svg{
+          color:black;
       }
    }
 }
@@ -287,13 +300,12 @@
 
 @media only screen and(max-width:768px) {
 
-    .navbar{
+    .whiteNav {
         .brand-name a{
             color:white;
         }
-        
-    }
-    .menu{
-        color:white;
+        .menu {
+            color: white;
+        }
     }
 }

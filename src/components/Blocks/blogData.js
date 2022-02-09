@@ -167,7 +167,7 @@ export const blogData=[
   {
     id:5,
     image:require('../Photos/news-03.jpg').default,
-    title:'10 best adventure & bagpacking blog to follow in 2022',
+    title:'world cancer day 2022: what is the link between sugar consumption and cancer',
     deccription:'looking for the adventure and backpacking blog ? check out:',
    urlToNews:'facebook.com',
     author:'habib',
@@ -962,6 +962,126 @@ export const blogData=[
    ],
    share:25,
    category:'general'
+   
+  },
+  {
+    id:25,
+    image:require('../Photos/news-03.jpg').default,
+    title:'world cancer day 2022: what is the link between sugar consumption and cancer',
+    deccription:'looking for the adventure and backpacking blog ? check out:',
+   urlToNews:'facebook.com',
+    author:'habib',
+   love:80,
+   comments:[
+     {
+       id:1,
+       image:null,
+       userName:'jhon doe',
+       comment:'thats a great article',
+       replies:[
+         {
+           image:null,
+           userName:'habib',
+           rieply:'thanks a lot'
+         }
+       ]
+     },
+     {
+       id:2,
+       image:null,
+       userName:'Rahim',
+       comment:' wow thats a great article',
+       replies:[
+         {
+           image:null,
+           userName:'habib',
+           rieply:'thank you'
+         }
+       ]
+     }
+   ],
+   share:99,
+   category:'business'
+   
+  },
+  {
+    id:26,
+    image:require('../Photos/news-03.jpg').default,
+    title:'world cancer day 2022: what is the link between sugar consumption and cancer',
+    deccription:'looking for the adventure and backpacking blog ? check out:',
+   urlToNews:'facebook.com',
+    author:'habib',
+   love:80,
+   comments:[
+     {
+       id:1,
+       image:null,
+       userName:'jhon doe',
+       comment:'thats a great article',
+       replies:[
+         {
+           image:null,
+           userName:'habib',
+           rieply:'thanks a lot'
+         }
+       ]
+     },
+     {
+       id:2,
+       image:null,
+       userName:'Rahim',
+       comment:' wow thats a great article',
+       replies:[
+         {
+           image:null,
+           userName:'habib',
+           rieply:'thank you'
+         }
+       ]
+     }
+   ],
+   share:99,
+   category:'business'
+   
+  },
+  {
+    id:27,
+    image:require('../Photos/news-03.jpg').default,
+    title:'world cancer day 2022: what is the link between sugar consumption and cancer',
+    deccription:'looking for the adventure and backpacking blog ? check out:',
+   urlToNews:'facebook.com',
+    author:'habib',
+   love:80,
+   comments:[
+     {
+       id:1,
+       image:null,
+       userName:'jhon doe',
+       comment:'thats a great article',
+       replies:[
+         {
+           image:null,
+           userName:'habib',
+           rieply:'thanks a lot'
+         }
+       ]
+     },
+     {
+       id:2,
+       image:null,
+       userName:'Rahim',
+       comment:' wow thats a great article',
+       replies:[
+         {
+           image:null,
+           userName:'habib',
+           rieply:'thank you'
+         }
+       ]
+     }
+   ],
+   share:99,
+   category:'business'
    
   },
   

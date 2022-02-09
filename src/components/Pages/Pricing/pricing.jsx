@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { PricingD, PricingD2 } from './pricingData'
 import './pricing.css'
 import Navbar from '../../navbar/navbar'
-import TopSection from '../../Blocks/PagesTopSection/pagesTopSection'
+import TopSection from '../../Blocks/PageTopSection'
 import Footer from '../../Blocks/Footer'
 
 function Membership({ item, active, value, period }) {
@@ -147,13 +147,15 @@ function Pricing2() {
 
 export default function Pricing() {
     return (
-        <div className='pricing'>
-            <Navbar />
+       <>
+        <Navbar />
             <TopSection name='pricing' />
+            <div className='pricing'>
             <Pricing1 />
             <div className="or"><h2>OR</h2></div>
             <Pricing2 />
+            </div>
             <Footer />
-        </div>
+       </>
     )
 }

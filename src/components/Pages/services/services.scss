@@ -1,6 +1,7 @@
 // services 1 section start here
 
 .services1 {
+    background:white;
     .container {
         .card {
             &:hover {
@@ -11,10 +12,10 @@
                 svg,
                 h3,
                 p {
-                    color: white;
+                    color: white !important;
                 }
 
-                a {
+                .link {
                     border: 1px solid white;
                 }
             }
@@ -34,11 +35,11 @@
             position: relative;
             z-index: 2;
             height: 250px;
-            background: #ebfafa !important;
+            background: #ebfafa ;
 
-            a {
-                display: none;
-            }
+         .link{
+             display:none;
+         }
 
             .icons {
                 display: block !important;
@@ -145,12 +146,12 @@
 .services3 {
     .container {
         .card {
-            background: linear-gradient(30deg, #03fac9, transparent) !important;
+            background: linear-gradient(30deg, #03fac9, transparent) ;
 
             box-shadow: none !important;
 
             &:hover {
-                background: linear-gradient(30deg, pink, transparent) !important;
+                background: linear-gradient(30deg, pink, transparent) ;
             }
 
 

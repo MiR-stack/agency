@@ -4,6 +4,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap:wrap;
         width: 80%;
         margin: 0 auto;
         margin-top: 100px;
@@ -150,7 +151,7 @@
     }
 }
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:1000px) {
     .pricing {
         .active {
             transform: scale(1.2);

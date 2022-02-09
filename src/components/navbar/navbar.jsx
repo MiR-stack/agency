@@ -5,7 +5,7 @@ import { FiMenu } from 'react-icons/fi'
 import './navbar.css'
 import Context from '../../useContext'
 
-export default function Nav() {
+export default function Nav({ Style }) {
     const [open, setOpen] = useState({
         home: false,
         services: false,
@@ -55,7 +55,7 @@ export default function Nav() {
 
     return (
         <Context.Consumer>
-            {({ mode, handleMode }) => <div className={`navbar ${nav ? 'nav-show' : ''} ${mode ? 'nav-dark' : ''}`} onChange={() => { setOpen({ ...open, pages: false }) }}>
+            {({ mode, handleMode }) => <div className={`navbar ${nav ? 'nav-show' : ''} ${mode ? '' : Style}`} onChange={() => { setOpen({ ...open, pages: false }) }}>
                 <div className={`dumb ${minNav ? 'dumb-open' : ''}`} onClick={close}></div>
                 <div className="brand-name">
                     <Link to='/'  ><h1>unicorn</h1></Link>
@@ -79,7 +79,7 @@ export default function Nav() {
                             <Link to='/services1'>services 1</Link>
                             <Link to='/services2'>services 2</Link>
                             <Link to='/services3'>services 3</Link>
-                            <Link to='/serviceDetails'>service details</Link>
+                            <Link to='/servicesDetails'>service details</Link>
                         </div>
                     </li>
                     <li className='dropdown-menu'>
@@ -100,18 +100,22 @@ export default function Nav() {
                     <li className='dropdown-menu'>
                         <div className="name" onClick={() => { setOpen({ pages: !pages }) }} onMouseOver={() => { setOpen({ ...open, closeAll: false }) }} > <p>pages</p>  <FaChevronDown /> <span></span></div>
                         <div style={closeAll ? { display: 'none' } : {}} className={`dropdown-container ${pages ? 'dropdown-container-open' : ''}`} onClick={close}>
-                            <Link to='/services'>services</Link>
+                            <Link to='/services1'>services1</Link>
+                            <Link to='/services2'>services2</Link>
+                            <Link to='/services3'>services3</Link>
                             <Link to='/servicesDetails'>service details</Link>
-                            <Link to='/work'>portfolio</Link>
+                            <Link to='/work1'>portfolio1</Link>
+                            <Link to='/work2'>portfolio2</Link>
                             <Link to='/workDetails'>work details</Link>
                             <Link to='/blog'>blog</Link>
-                            <Link to='/contract'>contract</Link>
+                            <Link to='/blogDetails'>blog details</Link>
+                            <Link to='/contact'>contact</Link>
                             <Link to='/pricing'>Pricing</Link>
                             <Link to='/about'>about</Link>
                             <Link to='/error'>error</Link>
                         </div>
                     </li>
-                    <li><Link to='/contract'><div className="name"><p>contract </p> <span></span></div> </Link></li>
+                    <li><Link to='/contact'><div className="name"><p>contact </p> <span></span></div> </Link></li>
                 </ul>
                 <div className="menu" onClick={() => setMinNav(true)}><FiMenu /></div>
             </div>}

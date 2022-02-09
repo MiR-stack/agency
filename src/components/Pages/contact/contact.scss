@@ -1,0 +1,43 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+
+    div {
+        padding: 30px 20px;
+        background: linear-gradient(30deg, rgb(214, 211, 211), transparent);
+        box-shadow: 0 0 20px rgb(9, 9, 9);
+        border-radius: 10px;
+        width: 300px;
+        margin: 20px 0;
+
+        h3 {
+            text-transform: capitalize;
+            padding-bottom: 10px;
+            color: #008066;
+        }
+
+        p {
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.map {
+    height: 60vh;
+    width: 100%;
+    background: rgb(214, 211, 211);
+
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .contact  {
+        padding: 50px 20px;
+    }
+}

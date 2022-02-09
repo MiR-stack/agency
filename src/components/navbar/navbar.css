@@ -149,20 +149,36 @@
   display: none;
 }
 
-.nav-dark .menu {
+.navbar .menu {
   color: white;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .dropdown-menu .name {
+  color: white;
+}
+
+.navbar .dropdown-menu .name svg {
+  color: white;
+}
+
+.nav-dark .menu {
+  color: black;
 }
 
 .nav-dark a {
-  color: white;
+  color: black;
 }
 
 .nav-dark .dropdown-menu .name {
-  color: white;
+  color: black;
 }
 
 .nav-dark .dropdown-menu .name svg {
-  color: white;
+  color: black;
 }
 
 .nav-show {
@@ -279,10 +295,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar .brand-name a {
+  .whiteNav .brand-name a {
     color: white;
   }
-  .menu {
+  .whiteNav .menu {
     color: white;
   }
 }

@@ -19,15 +19,18 @@ button {
   margin-top: 20px;
 }
 
+.section .btn a,
 .section .btn button {
   border: 1px solid #008066;
   color: #008066;
+  text-decoration: none;
   margin-left: auto;
   border-radius: 5px;
   padding: 15px 30px;
   text-transform: capitalize;
 }
 
+.section .btn a:hover,
 .section .btn button:hover {
   border: 1px solid white;
   background: #03fac9;
@@ -103,13 +106,17 @@ button {
 
 .main .wrapper button {
   margin-top: 50px;
+}
+
+.main .wrapper button a {
   border: 1px solid #008066;
   color: #008066;
   padding: 10px 15px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.main .wrapper button:hover {
+.main .wrapper button a:hover {
   background: #008066;
   color: white;
 }
@@ -182,7 +189,6 @@ button {
   padding: 30px 15px;
   padding-bottom: 30px;
   width: 30%;
-  background: white;
   text-align: center;
   margin-top: 50px;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -190,6 +196,11 @@ button {
   border-radius: 10px;
   -webkit-transition: .3s linear;
   transition: .3s linear;
+}
+
+.services .container .card a {
+  text-decoration: none;
+  color: black;
 }
 
 .services .container .card .icons {
@@ -212,26 +223,23 @@ button {
 }
 
 .services .container .card .link {
-  margin-top: 20px;
-}
-
-.services .container .card a {
   padding: 15px;
   height: 50px;
   width: 50px;
   margin: 0 auto;
+  margin-top: 20px;
   border-radius: 50%;
   border: 1px solid #008066;
   color: #008066;
 }
 
-.services .container .card a svg {
+.services .container .card .link svg {
   font-size: unset;
   margin: 0;
   color: unset;
 }
 
-.services .container .card a:hover {
+.services .container .card .link:hover {
   background: #03fac9;
   border: 1px solid #03fac9;
   color: white;
@@ -255,6 +263,10 @@ button {
   margin: 0 auto;
 }
 
+.portfolio .container {
+  display: block;
+}
+
 .portfolio .btns {
   margin: 20px 0;
 }
@@ -273,10 +285,10 @@ button {
 
 .portfolio .btns .active {
   color: white;
-  background: #03fac9;
+  background: #03fac9 !important;
   -webkit-box-shadow: 2px 2px 10px #03fac9;
           box-shadow: 2px 2px 10px #03fac9;
-  border: 1px solid #008066;
+  border: 1px solid white;
 }
 
 .portfolio .wrapper {
@@ -297,7 +309,7 @@ button {
   cursor: pointer;
 }
 
-.portfolio .wrapper .card {
+.workCard {
   height: 400px;
   width: 30%;
   margin: 20px auto;
@@ -307,7 +319,7 @@ button {
   overflow: hidden;
 }
 
-.portfolio .wrapper .card img {
+.workCard img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -317,7 +329,7 @@ button {
   top: 0;
 }
 
-.portfolio .wrapper .card p {
+.workCard p {
   position: absolute;
   bottom: 0;
   margin: 20px auto;
@@ -330,7 +342,7 @@ button {
   text-transform: capitalize;
 }
 
-.portfolio .wrapper .card .transparent {
+.workCard .transparent {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -339,14 +351,14 @@ button {
   display: none;
 }
 
-.portfolio .wrapper .card:hover p {
+.workCard:hover p {
   -webkit-transform: translateY(0) translateX(-50%);
           transform: translateY(0) translateX(-50%);
   -webkit-transition: .3s linear;
   transition: .3s linear;
 }
 
-.portfolio .wrapper .card:hover .transparent {
+.workCard:hover .transparent {
   display: block;
 }
 
@@ -591,12 +603,31 @@ button {
   display: flex;
 }
 
-.blogCard .bottom .right p {
+.blogCard .bottom .right p,
+.blogCard .bottom .right a {
+  position: relative;
   margin-right: 10px;
+  text-decoration: none;
+  color: black;
 }
 
-.blogCard .bottom .right p svg:hover {
+.blogCard .bottom .right p svg:hover,
+.blogCard .bottom .right a svg:hover {
   cursor: pointer;
+}
+
+.blogCard .bottom .right p sup,
+.blogCard .bottom .right a sup {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  padding: 3px;
+  font-size: .5rem;
+  position: absolute;
+  right: -50%;
+  top: -50%;
 }
 
 .information .wrapper {
@@ -889,6 +920,10 @@ button {
   width: 50%;
   overflow: hidden;
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .information .wrapper .right img {
@@ -897,10 +932,6 @@ button {
   max-height: 500px;
   -webkit-transition: .5s linear;
   transition: .5s linear;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 .information .wrapper .right img:hover {
@@ -1177,52 +1208,6 @@ button {
   color: #008066;
 }
 
-.Error {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-.Error .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.Error .wrapper h1 {
-  font-size: calc(6rem + 3vw);
-}
-
-.Error .wrapper p {
-  color: #262626;
-  margin: 20px 0;
-}
-
-.Error .wrapper button {
-  padding: 10px 20px;
-  border: 1px solid #03fac9;
-  border-radius: 10px;
-}
-
-.Error .wrapper button:hover {
-  background: #03fac9;
-  border: 2px solid white;
-  color: white;
-  -webkit-box-shadow: 0 0 20px #03fac9;
-          box-shadow: 0 0 20px #03fac9;
-}
-
-.Error .wrapper button a {
-  color: #03fac9;
-  text-decoration: none;
-}
-
-.Error .wrapper button a:hover {
-  color: white;
-}
-
 .quote h2 {
   font-size: calc(1.5rem + 1.5vw);
   text-transform: capitalize;
@@ -1342,6 +1327,23 @@ button {
 }
 
 .brands {
+  width: 100%;
+  padding: 50px 20px;
+  background: #e6e6e6;
+}
+
+.brands h3 {
+  text-transform: capitalize;
+  font-size: calc(1.3rem + .5vw);
+  color: #008066;
+}
+
+.brands p {
+  padding: 20px 0;
+}
+
+.brands .wraper {
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1350,15 +1352,139 @@ button {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   overflow: hidden;
-  height: 200px;
-  width: 100%;
-  padding: 50px 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.brands img {
-  height: 100px;
-  width: 100px;
+.brands .wraper img {
+  height: calc(90px + 3vw);
+  width: calc(90px + 3vw);
+  margin: 10px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .top {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: left !important;
+  color: #302f2f;
+}
+
+.carousel .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel .middle button {
+  font-size: 2rem;
+}
+
+.carousel .controler .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel .controler .bottom .pages {
+  margin: 0 10px;
+}
+
+.carousel .controler .bottom .pages span {
+  padding: 5px;
+  cursor: default;
+}
+
+.carousel .controler .bottom .pages .active {
+  background: #ddd5d5;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+}
+
+.carousel .controler .bottom button {
+  font-size: 1rem;
+  background: #ddd5d5;
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+}
+
+.carousel .controler .bottom button svg {
+  color: #1a1a1a;
+}
+
+.carousel .controler .bottom button:hover {
+  border: 1px solid black;
+}
+
+.carousel .controler .bottom button:hover svg {
+  color: black;
+}
+
+.topSection {
+  height: 60vh;
+  width: 100%;
+  background: url("../Photos/pageTopSection.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.topSection .container {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.topSection .container .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.topSection .container .wrapper h1 {
+  font-size: calc(2rem + 1.5vw);
+  color: #e60099;
+  margin-bottom: 10px;
+}
+
+.topSection .container .wrapper p {
+  color: white;
+}
+
+.topSection .container .wrapper p span {
+  color: #03fac9;
 }
 
 .mode1 {
@@ -1394,11 +1520,14 @@ button {
   .portfolio .wrapper {
     width: 95%;
   }
-  .portfolio .wrapper .card {
+  .portfolio .wrapper .workCard {
     width: 45%;
   }
   .team .container .card {
     width: 30%;
+  }
+  .blogCard .bottom .right sup {
+    display: none;
   }
   .section .title {
     width: 80%;
@@ -1487,6 +1616,9 @@ button {
   .quote .wraper {
     width: 100%;
   }
+  .brands .wraper {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1503,14 +1635,14 @@ button {
   .portfolio .wrapper {
     width: 95%;
   }
-  .portfolio .wrapper .card {
+  .workCard {
     width: 45%;
     height: calc(200px + 5vw);
   }
-  .portfolio .wrapper .card .transparent {
+  .workCard .transparent {
     display: block;
   }
-  .portfolio .wrapper .card p {
+  .workCard p {
     -webkit-transform: translateY(0) translateX(-50%);
             transform: translateY(0) translateX(-50%);
   }
@@ -1585,6 +1717,13 @@ button {
     font-size: .9rem;
     text-align: center;
   }
+  .brands .wraper {
+    width: 100%;
+  }
+  .brands .wraper img {
+    height: 80px;
+    width: 80px;
+  }
   .funFact .wrapper {
     margin: 40px 0 0 0;
   }
@@ -1599,6 +1738,9 @@ button {
   }
   .quote .image {
     width: 100%;
+  }
+  .topSection {
+    height: 50vh;
   }
 }
 /*# sourceMappingURL=index.css.map */

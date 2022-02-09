@@ -1,4 +1,4 @@
-.contract .container {
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,29 +12,40 @@
   padding: 100px 50px;
 }
 
-.contract .container div {
+.contact div {
   padding: 30px 20px;
   background: linear-gradient(30deg, #d6d3d3, transparent);
-  -webkit-box-shadow: 0 0 20px black;
-          box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px #090909;
+          box-shadow: 0 0 20px #090909;
   border-radius: 10px;
   width: 300px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
-.contract .container div h3 {
+.contact div h3 {
   text-transform: capitalize;
   padding-bottom: 10px;
   color: #008066;
 }
 
-.contract .container div p {
+.contact div p {
   line-height: 1.5rem;
 }
 
-.contract .map {
-  height: 40vh;
+.map {
+  height: 60vh;
   width: 100%;
   background: #d6d3d3;
 }
-/*# sourceMappingURL=contract.css.map */
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .contact {
+    padding: 50px 20px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

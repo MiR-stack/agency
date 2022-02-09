@@ -7,6 +7,8 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
   margin-top: 100px;
@@ -163,7 +165,7 @@
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1000px) {
   .pricing .active {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);

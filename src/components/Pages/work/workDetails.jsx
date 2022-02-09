@@ -1,19 +1,12 @@
 import React from 'react'
 import Context from '../../../useContext'
 import Navbar from '../../navbar/navbar'
-import TopSection from '../../Blocks/PagesTopSection/pagesTopSection'
+import TopSection from '../../Blocks/PageTopSection'
 import Subscribe from '../../Blocks/Subscribe'
 import Footer from '../../Blocks/Footer'
 import './work.css'
 import { Card } from '../../Blocks/portfolio'
 
-// function Card({item}){
-//     return (
-//         <div className="card">
-
-//         </div>
-//     )
-// }
 
 function Details() {
     return (
@@ -40,7 +33,7 @@ function Details() {
                     <div className='Bottom' >
                         <h2>related work</h2>
                         <div className="wrapper">
-                            {rWork.map(item => <Card key={item.id} item={item} />)}
+                            {rWork.map(item => <Card key={item.id} work={item} />)}
                         </div>
                     </div>
                 </div>

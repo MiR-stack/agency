@@ -16,7 +16,7 @@ function Card({ item }) {
             <h3>{item.name}</h3>
             <p>{item.position} </p>
             <div className="icon">
-                <Link to={item.fb} > <FaFacebook /> </Link>
+                <Link to={{ pathname: item.fb }} > <FaFacebook /> </Link>
                 <Link to={item.twitter} ><FaTwitter /></Link>
                 <Link to={item.insta} > <FaInstagram /> </Link>
             </div>

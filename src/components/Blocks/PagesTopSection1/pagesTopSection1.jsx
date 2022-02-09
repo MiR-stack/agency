@@ -26,7 +26,7 @@ export default function PagesTopSection({ name }) {
             color: '#e60099',
             marginBottom: '10px'
         },
-        
+
     }
 
     return (
@@ -36,9 +36,11 @@ export default function PagesTopSection({ name }) {
             <span></span>
             <span></span>
             <span></span>
-            <div className='wrapper' style={style.wrapper}>
-                <h1 style={style.h1}>{name}</h1>
-                <p >home/ <span>{name}</span></p>
+            <div className='container'>
+                <div className='wrapper' style={style.wrapper}>
+                    <h1 style={style.h1}>{name}</h1>
+                    <p >home/ <span>{name}</span></p>
+                </div>
             </div>
         </div >
     )

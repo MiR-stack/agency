@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { blogData } from './blogData'
 import { Link } from 'react-router-dom'
+import {HashLink} from 'react-router-hash-link'
 import Width from '../useWindowSize'
 import { AiOutlineHeart, AiOutlineComment, AiOutlineShareAlt } from 'react-icons/ai'
 import Context from '../../useContext'
@@ -32,9 +33,9 @@ export const Card = ({ item }) => {
                 <div>{time.toDateString()} </div>
                 <div className='right'>
 
-                    <p><AiOutlineHeart /><span> {item.love}</span> </p>
-                    <p><AiOutlineComment /><span>{item.comment} </span></p>
-                    <p><AiOutlineShareAlt /><span>{item.share} </span></p>
+                    <p><AiOutlineHeart /><sup> {item.love}</sup> </p>
+                    <HashLink smooth to='/blogDetails#comments'><AiOutlineComment /><sup>{item.comments.length} </sup> </HashLink>
+                    <p><AiOutlineShareAlt /><sup>{item.share} </sup></p>
                 </div>
             </div>
         </div>
@@ -62,8 +63,10 @@ export default function Blog() {
                 {Data().map((item, index) => <Card item={item} key={index} />)}
             </div>
             <div className="btn">
-                <button>see all</button>
+                <Link to='/blog'>see all</Link> 
             </div>
         </div>
     )
+
+
 }

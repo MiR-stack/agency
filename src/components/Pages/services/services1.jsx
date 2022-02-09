@@ -1,19 +1,18 @@
 import React from 'react'
 import Navbar from '../../navbar/navbar'
-import TopSection from '../../Blocks/PagesTopSection/pagesTopSection'
+import TopSection from '../../Blocks/PageTopSection'
 import Service from '../../Blocks/Services'
-import FunFacts from '../../Blocks/Fun_fact'
-import Subscribe from '../../Blocks/Subscribe'
+import Brands from '../../Blocks/Brands'
 import Footer from '../../Blocks/Footer'
 
 export default function Services() {
     return (
         <div className='Services'>
-            <Navbar />
+            <Navbar  />
             <TopSection name={'services'} />
-            <Service Style={'services1'} />
-            <FunFacts />
-            <Subscribe />
+            <Service Style={'services1'} title='see our services' />
+            <Brands />
+
             <Footer />
         </div>
     )

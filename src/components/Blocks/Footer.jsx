@@ -26,7 +26,7 @@ export default function Footer() {
                     <Link to='/team'>team</Link>
                 </div>
                 <div>
-                    <h3>contract</h3>
+                    <h3>contact</h3>
                     <p>example@unicorn.com</p>
                     <p>+8801400007904</p>
                     <p>road no-11,mohammadpur,dhaka</p>

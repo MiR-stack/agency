@@ -61,6 +61,8 @@ export default function Left() {
 
     return (
         <div className="left">
+        <div className="content">
+            <h3>{blogDetails.title} </h3>
             <div className="image">
                 <img src={blogDetails.image} alt={blogDetails.title} />
                 <div className="imgFooter">
@@ -68,8 +70,7 @@ export default function Left() {
                     <p>date: {date.toDateString()} </p>
                 </div>
             </div>
-            <div className="content">
-                <h3>{blogDetails.title} </h3>
+                
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias facilis in neque sit voluptas veritatis error, atque dolor illum praesentium? Voluptate atque repellat sequi, consequatur sed ut fugiat dolores. Nisi non harum officiis provident? Aliquid corporis fugit rem, asperiores laudantium quo. Doloribus beatae amet mollitia doloremque quasi odio corporis. Fuga ab quam quae. Nesciunt voluptates hic cumque at enim qui consequuntur perspiciatis iusto! Quidem, maxime at tenetur repellendus aliquid et.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum veniam dolor odio atque nisi itaque voluptates temporibus recusandae rerum architecto?</p>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae temporibus labore eum sapiente recusandae aliquid voluptatibus rerum autem ducimus impedit.</h4>
@@ -84,7 +85,7 @@ export default function Left() {
                     <FaInstagram />
                 </div>
             </div>
-            <div className="comments">
+            <div className="comments" id='comments' >
                 <h3>Comments:</h3>
                 {blogDetails.comments.map(item => <Comment key={item.id} value={{ item, comment, setModal }} />)}
             </div>

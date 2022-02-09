@@ -19,7 +19,7 @@ export default function Home() {
 
     return (
         <div className='home1'>
-            <Navbar  />
+            <Navbar Style={'nav-dark'}  />
             <LandingSection />
             <Services Style='services1' />
             <Portfolio />

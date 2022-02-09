@@ -36,7 +36,7 @@ useEffect(()=>{
 
 useEffect(()=>{
     let Category = portfolioDetails.category
-    let work = data.filter(item => item.category === Category).slice(0,index)
+    let work = data.filter(item => item.category === Category).filter(item => item.id !== portfolioDetails.id).slice(0,index)
     setRWork(work)
 },[portfolioDetails,index])
 
@@ -53,6 +53,23 @@ function handlePortfolioDetails (id){
 const [ Rblog,setRblog] = useState([])
 const [rIndex,setRIndex] = useState(3)
 const [category,setCategory] = useState('all')
+    const [Bdata, setData] = useState(blogData)
+    const [search,setSearch] = useState()
+    function searchTerm(e) {
+        setSearch(e.target.value)
+     }
+ 
+     function handleSearch() {
+         setCategory('all')
+         let Data = blogData.filter(item => item.title.includes(search))
+         
+         if(Data.length >0){
+             setData(Data)
+         }else{
+            setData(Data)
+         }
+ 
+     }
 
  useEffect(()=>{
      if(width <768){
@@ -76,7 +93,7 @@ const [category,setCategory] = useState('all')
 // blog section end here
 
     return (
-        <Context.Provider value={{mode ,handleMode ,portfolioDetails,handlePortfolioDetails,rWork,blogDetails,handleBDetails,Rblog,category,setCategory}}>
+        <Context.Provider value={{mode ,handleMode ,portfolioDetails,handlePortfolioDetails,rWork,blogDetails,handleBDetails,Rblog,category,setCategory,search,searchTerm,Bdata,handleSearch}}>
             <App mode={mode} />
         </Context.Provider>
     )

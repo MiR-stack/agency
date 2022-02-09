@@ -1,9 +1,8 @@
 import React from 'react'
 import Navbar from '../../navbar/navbar'
-import TopSection from '../../Blocks/PagesTopSection/pagesTopSection'
+import TopSection from '../../Blocks/PageTopSection'
 import Service from '../../Blocks/Services'
-import FunFacts from '../../Blocks/Fun_fact'
-import Subscribe from '../../Blocks/Subscribe'
+import Brands from '../../Blocks/Brands'
 import Footer from '../../Blocks/Footer'
 
 export default function Services() {
@@ -11,9 +10,8 @@ export default function Services() {
         <div className='Services'>
             <Navbar />
             <TopSection name={'services'} />
-            <Service Style={'services3'} />
-            <FunFacts />
-            <Subscribe />
+            <Service Style={'services3'} title='see our services' />
+            <Brands />
             <Footer />
         </div>
     )

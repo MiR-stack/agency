@@ -1,9 +1,8 @@
 import React from 'react'
 import Left from './leftSide'
 import Right from './rightSide'
-
 import Navbar from '../../../navbar/navbar'
-import TopSection from '../../../Blocks/PagesTopSection/pagesTopSection'
+import TopSection from '../../../Blocks/PageTopSection'
 import Subscribe from '../../../Blocks/Subscribe'
 import Footer from '../../../Blocks/Footer'
 

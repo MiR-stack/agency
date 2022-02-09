@@ -1,6 +1,7 @@
 import React from 'react'
 import { ReactComponent as Developer } from '../svg/Developer1.svg'
 import Context from '../../useContext'
+import {Link} from 'react-router-dom'
 
 export default function Main() {
     return (
@@ -10,7 +11,7 @@ export default function Main() {
                     <div className="wrapper">
                         <h1>digital creative agency</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae dolores reiciendis quisquam vel modi pariatur quibusdam repellat! Tenetur, rem.</p>
-                        <button> get started</button>
+                        <button><Link to='/pricing'> get started</Link></button>
                     </div>
                 </div>
                 <div className="right">

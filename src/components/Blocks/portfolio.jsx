@@ -30,7 +30,6 @@ export default function Portfolio({ color, title }) {
 
 
     useEffect(() => {
-        console.log(width)
         if (width < 577) {
             setPageData(4)
         } else {

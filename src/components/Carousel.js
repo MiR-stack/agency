@@ -39,7 +39,6 @@ export function carousel(data,pageData,currentPage){
             pages.push(i + 1)
         }
         var index = pages.indexOf(currentPage)
-        console.log(index)
         var PageNumbers =pages
         if (pages.length>5){
             if( index>2 && index <(pages.length - 2)){
@@ -103,7 +102,6 @@ export default function Carousel({children,value}){
         }
     }, [category, pageData, currentPage,data])
 
-    console.log(Data)
     return(
         <div className='carousel' >
                        <p className='top'>page {currentPage} out of {totalPage} </p>

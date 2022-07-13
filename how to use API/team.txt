@@ -1,0 +1,20 @@
+get all team member
+get request
+http://localhost:5000/api/team
+
+get any spacific team member.you need to send user Id as a params
+get request
+http://localhost:5000/api/team?id:userId
+
+
+add a team member
+first you need to create a user account .then admin can change your category member to team
+
+
+update team member data
+put request
+http:localhost:5000/api/team?id:accountId
+object{what you want to update}
+
+delete a team member
+first you need to change category team to member. then you can delete any user

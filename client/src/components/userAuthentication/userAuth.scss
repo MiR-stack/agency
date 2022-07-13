@@ -1,0 +1,133 @@
+.auth{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(1.1);
+    width: 400px;
+    text-transform: capitalize;
+    background:white;
+    z-index:-1;
+    border-radius:10px;
+    opacity:0;
+    transition:.3s linear;
+    .wrapper{
+        position:relative;
+        padding:30px 20px;
+        .close{
+            position:absolute;
+            right:20px;
+            top:20px;
+            font-size:30px;
+            font-weight:800;
+        }
+    }
+    .err{
+        input, .input_group{
+            border:1px solid red;
+            background:rgba(255, 0, 0, 0.405) !important;
+        }
+        p{
+            color:red;
+            display:block;
+        }
+    }
+    h1{
+        font-size:calc(2rem + 1vw);
+        margin-bottom:20px;
+        text-align:center;
+    }
+       table tr{
+        vertical-align:top;
+       }
+    form{
+        p{
+            font-size:.8rem;
+            opacity: .8;
+            display:none;
+        }
+        table{
+            border-spacing:0 10px;
+        }
+        input{
+            padding:5px ;
+            border-radius:5px;
+            outline:none;
+            width:200px;
+        }
+        .input_group{
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            border:1px solid black;
+            background:white;
+            padding:5px ;
+            border-radius:5px;
+            width:200px;
+            svg{
+                cursor:pointer;
+            }
+            input{
+                border:none;
+                outline:none;
+                background:none ;
+                padding:0;
+                width:unset;
+            }
+
+          
+        }
+        button{
+            padding:10px 15px;
+            border:2px solid black;
+            border-radius: 10px;
+            margin:0 auto;
+        }
+    }
+    .or{
+        width:100px;
+        position:relative;
+        margin:20px auto;
+        border-top:2px solid black;
+        span{
+            position:absolute;
+            left:50%;
+            top:-50%;
+            transform:translate(-50%,-50%);
+            padding:5px;
+            background:white;
+        }
+    }
+    .loginWith{
+        display:flex;
+        margin-bottom:20px;
+        .icons{
+            svg{
+                margin-left:10px;
+            }
+        }
+    }
+
+}
+
+.transparent{
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    z-index:998;
+    display:none;
+}
+
+// showing userAuthentication modal
+.tr_S{
+    display:block;
+}
+
+.auth_S{
+    transform: scale(1) translate(-50%,-50%);
+    opacity:1;
+    transition:.3s linear;
+    z-index:999;
+}

@@ -1,0 +1,28 @@
+
+create service
+http://domain/api/services
+data ={
+    
+}
+
+
+get request
+http://domain/api/services
+
+edit request
+http://domain/api/services?id=serviceId
+params ={
+    id = service id ,the service you want to edit
+},
+data = {
+    type:object, the information you want to change
+}
+
+
+delet service
+http://domain/api/services?id=serviceId
+params ={
+    id = service id ,the service you want to delet
+}
+
+

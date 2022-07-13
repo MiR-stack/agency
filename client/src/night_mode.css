@@ -1,0 +1,296 @@
+.dark_mode p,
+.dark_mode ul {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .TopSection {
+  background: #1b1c1f !important;
+}
+
+.dark_mode input,
+.dark_mode textarea {
+  background: #1a1a1a;
+  color: white;
+  border: 1px solid white !important;
+}
+
+.dark_mode p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark_mode h2,
+.dark_mode h3,
+.dark_mode h4 {
+  color: white !important;
+}
+
+.dark_mode .section,
+.dark_mode .services,
+.dark_mode .Blog,
+.dark_mode .Right {
+  background: #202124 !important;
+  padding: 50px 15px;
+  margin: 0;
+}
+
+.dark_mode .section .card,
+.dark_mode .section .blogCard,
+.dark_mode .services .card,
+.dark_mode .services .blogCard,
+.dark_mode .Blog .card,
+.dark_mode .Blog .blogCard,
+.dark_mode .Right .card,
+.dark_mode .Right .blogCard {
+  background: #0d0d0d !important;
+}
+
+.dark_mode .section table th,
+.dark_mode .services table th,
+.dark_mode .Blog table th,
+.dark_mode .Right table th {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark_mode .section .btns button,
+.dark_mode .services .btns button,
+.dark_mode .Blog .btns button,
+.dark_mode .Right .btns button {
+  background: #1b1c1f;
+  color: white;
+  border: 1px solid white !important;
+}
+
+.dark_mode .section .btn a,
+.dark_mode .section .btn button,
+.dark_mode .services .btn a,
+.dark_mode .services .btn button,
+.dark_mode .Blog .btn a,
+.dark_mode .Blog .btn button,
+.dark_mode .Right .btn a,
+.dark_mode .Right .btn button {
+  background: #1b1c1f;
+  color: white;
+  border: 1px solid white;
+}
+
+.dark_mode .section .wrapper .blogCard .bottom,
+.dark_mode .section .wrapper .blogCard svg,
+.dark_mode .services .wrapper .blogCard .bottom,
+.dark_mode .services .wrapper .blogCard svg,
+.dark_mode .Blog .wrapper .blogCard .bottom,
+.dark_mode .Blog .wrapper .blogCard svg,
+.dark_mode .Right .wrapper .blogCard .bottom,
+.dark_mode .Right .wrapper .blogCard svg {
+  color: white;
+}
+
+.dark_mode .main {
+  background: #202124;
+}
+
+.dark_mode .main::after {
+  background: #1a1a1a;
+}
+
+.dark_mode .main::before {
+  background: #0d0d0d;
+}
+
+.dark_mode .information .right {
+  border-radius: 10px;
+}
+
+.dark_mode .information .right .paragraph {
+  background: #1a1a1a !important;
+}
+
+.dark_mode .information .right table {
+  color: white;
+}
+
+.dark_mode .information .wrapper .left .btns::after {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .information .wrapper .left .btns button {
+  background: #1a1a1a;
+}
+
+.dark_mode .information .wrapper .left .submit button,
+.dark_mode .main .wrapper button a,
+.dark_mode .pricing .container .membership button,
+.dark_mode .manualPricing .container .left .top select {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .subscribe .wrapper .btn_group {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .subscribe .wrapper .btn_group input {
+  border: none !important;
+}
+
+.dark_mode .portfolio {
+  background: #202124;
+}
+
+.dark_mode .portfolio h2,
+.dark_mode .portfolio h4 {
+  color: white;
+}
+
+.dark_mode .portfolio .bottom p {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .carousel .top {
+  color: white;
+}
+
+.dark_mode .carousel .controler .bottom button {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .carousel .controler .bottom button:hover svg,
+.dark_mode .carousel .controler .bottom button svg {
+  color: white;
+}
+
+.dark_mode .Blog .top .container .btn-group button,
+.dark_mode .Blog .top .container .btn-group input {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+  border-right: none !important;
+}
+
+.dark_mode .Blog .top .container select {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+  outline: none;
+}
+
+.dark_mode .carousel .controler .bottom .pages {
+  color: white;
+}
+
+.dark_mode .carousel .controler .bottom .pages .active {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .btn-group input,
+.dark_mode .btn-group button {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .btn-group input {
+  border-right: none;
+}
+
+.dark_mode .blogDetails {
+  background: #0d0d0d;
+}
+
+.dark_mode .blogDetails .left .content h4 {
+  background: #0d0d0d;
+  color: white;
+}
+
+.dark_mode .blogDetails .left,
+.dark_mode .pricing .or h2 {
+  background: #202124;
+}
+
+.dark_mode .blogDetails .Right .tags .wraper p {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .blogDetails .Right .searchbar input,
+.dark_mode .blogDetails .Right .searchbar button {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .blogDetails .left .share .icons svg {
+  color: white;
+}
+
+.dark_mode .blogDetails .left .comments .comment .wraper .fComment .img {
+  border: 1px solid white;
+}
+
+.dark_mode .blogDetails .left .commentInput button, .dark_mode .Error .container .wrapper button a {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .blogDetails .left .image .imgFooter p {
+  background: #1a1a1a;
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark_mode .blogDetails .rblog .wraper .blogCard {
+  background: #0d0d0d;
+}
+
+.dark_mode .blogCard .bottom .right p,
+.dark_mode .blogCard .bottom {
+  color: white;
+}
+
+.dark_mode .blogCard .bottom .right p a svg,
+.dark_mode .blogCard .bottom a svg {
+  color: white;
+}
+
+.dark_mode .services2 .container .card {
+  background: #0d0d0d;
+}
+
+.dark_mode .about .top, .dark_mode .Error .container .wrapper {
+  background: #202124;
+}
+
+.dark_mode .about .wraper .Card,
+.dark_mode .quote .wraper {
+  background: #0d0d0d;
+}
+
+.dark_mode .about .container,
+.dark_mode .main .left {
+  background: #202124;
+}
+
+.dark_mode .quote .wraper span {
+  color: #e4dfdf;
+}
+
+.dark_mode .contact {
+  background: #202124;
+}
+
+.dark_mode .contact div {
+  background: #0d0d0d;
+}
+/*# sourceMappingURL=night_mode.css.map */

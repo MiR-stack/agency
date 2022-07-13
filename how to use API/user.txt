@@ -1,0 +1,26 @@
+
+
+get all user
+get request
+http://localhost:5000/api/user
+
+register new user
+post request
+http://localhost:5000/user/register
+object:{name,email:must be uniqe,password}
+
+login user
+get request
+http://localhost:5000/api/user
+object:{name,email}
+
+update or edit user
+put request
+http://localhost:5000/api/user?id:userId
+params:{id:userId}
+object:{what you want to change}
+
+delete user
+delete request
+http://localhost:5000/api/user?id:userId
+params:{id:userId}
